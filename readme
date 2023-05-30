@@ -1,0 +1,45 @@
+# Tambola-App
+
+Hi, this is a simple tambola ticket creation app with signup, signin, creation of tickets and fetching of the same
+
+
+## Structure
+
+1* First signup is needed
+2* Then you need to login so that you get a JWT token
+3* Once you receive the JWT Token, you will be using it for further acess of APIs to create tickets with unique batch ID so you can fetch accordinly(fetchin of all or on the bases of batchID/knowMeID)
+4* Fetch API to fetch it with proper filter and page size and page number
+
+Following MVC structure
+
+## Requirements to run
+
+You just need to have
+Node JS installed and 
+Active MongoD 
+
+You can use 
+nodemon app.js
+or
+node app.js to run the project 
+
+## ** Apis of the project **
+Apis that can be used are
+
+to signup
+http://localhost:3000/tambolasignup
+
+To Login
+http://localhost:3000/tambolalogin
+it will create a ** JWT token ** to be used further to hit further apis
+
+To create unique n number of tickets by a valid logged in individual
+http://localhost:3000/ticket/create
+
+To fetch the tickets
+http://localhost:3000/ticket/fetchtickets?pagenumber=1&pageSize=2
+
+
+## Postman APIs are also shared
+** Postman apis ** in this folder you will find the collection named ** indranu.postman_collection.json **
+For further help you can import it.
