@@ -17,7 +17,7 @@ Following MVC structure
 You just need to have
 Node JS installed and 
 Active MongoD 
-in commandline do run "npm install"
+in commandline do run "npm install" to install all necessary packages
 
 You can use 
 nodemon app.js
